@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   ft_test_output.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vicgarci <vicgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 14:25:55 by vicgarci          #+#    #+#             */
-/*   Updated: 2023/03/09 18:26:53 by vicgarci         ###   ########.fr       */
+/*   Created: 2023/03/09 18:16:31 by vicgarci          #+#    #+#             */
+/*   Updated: 2023/03/09 18:23:25 by vicgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#include "../push_swap.h"
 
-# include "../libft_def/libftprintf.h"
-
-# ifndef TESTER
-#  define TESTER 0
-# endif
-
-/*----ORDERS----*/
-
-void	ft_swap(t_list **stack);
-
-/*----TESTERS----*/
-
-void	ft_test_output(t_bool result, char *s);
-void	push_swap_tester(void);
-void	swap_tester(void);
-t_bool	push_tester(void);
-
-#endif
+void	ft_test_output(t_bool result, char *s)
+{
+	if (result)
+		ft_printf("\033[32m%s", s);
+	else
+		ft_printf("\33[31m%s", s);
+	ft_printf("\033[39m\n");
+}

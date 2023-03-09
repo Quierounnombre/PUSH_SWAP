@@ -6,16 +6,20 @@
 /*   By: vicgarci <vicgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 14:47:06 by vicgarci          #+#    #+#             */
-/*   Updated: 2023/03/08 14:53:59 by vicgarci         ###   ########.fr       */
+/*   Updated: 2023/03/09 18:10:20 by vicgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	ft_push(t_list *a_stack, t_list *b_stack)
+void	ft_push(t_list **target, t_list **destiny)
 {
-	if (a_stack && b_stack)
+	t_list	*temp;
+
+	if (*target)
 	{
-		ft_lstadd_front(a_stack, )
+		temp = (*target)->next;
+		ft_lstadd_front(destiny, *target);
+		*target = temp->next;
 	}
 }

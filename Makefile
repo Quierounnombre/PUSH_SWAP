@@ -6,7 +6,7 @@
 #    By: vicgarci <vicgarci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/17 14:56:53 by vicgarci          #+#    #+#              #
-#    Updated: 2023/03/08 15:40:55 by vicgarci         ###   ########.fr        #
+#    Updated: 2023/03/09 18:20:23 by vicgarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ FILES = src/main.c \
 		src/push_swap_tester.c \
 		src/stack_orders/ft_swap_stack.c \
 		src/testers/swap_tester.c \
+		src/testers/ft_test_output.c \
 
 
 OBJS = ${FILES:.c=.o}

@@ -6,7 +6,7 @@
 /*   By: vicgarci <vicgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 14:54:34 by vicgarci          #+#    #+#             */
-/*   Updated: 2023/03/09 17:53:23 by vicgarci         ###   ########.fr       */
+/*   Updated: 2023/03/09 18:22:07 by vicgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,22 +70,22 @@ void	swap_tester(void)
 	flag = false;
 	if (!test_1(&stack))
 	{
-		ft_printf("KO test_1\n");
+		ft_test_output(false, "KO test_1");
 		flag = true;
 	}
 	ft_lstadd_back(&stack, ft_lstnew((void *)2));
 	if (!test_2(&stack))
 	{
-		ft_printf("KO test_2\n");
+		ft_test_output(false, "KO test_2");
 		flag = true;
 	}
 	ft_lstadd_back(&stack, ft_lstnew((void *)3));
 	if (!test_3(&stack))
 	{
-		ft_printf("KO test_3\n");
+		ft_test_output(false, "KO test_3");
 		flag = true;
 	}
 	clean_test(stack);
 	if (!flag)
-		ft_printf("SAWP OK\n");
+		ft_test_output(true, "SWAP");
 }
