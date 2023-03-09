@@ -6,7 +6,7 @@
 /*   By: vicgarci <vicgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 14:25:55 by vicgarci          #+#    #+#             */
-/*   Updated: 2023/03/08 15:41:16 by vicgarci         ###   ########.fr       */
+/*   Updated: 2023/03/09 14:54:50 by vicgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # endif
 
 /*----ORDERS----*/
-void	ft_swap(t_list *stack);
+void	ft_swap(t_list **stack);
 
 /*----TESTERS----*/
 void	push_swap_tester(void);
