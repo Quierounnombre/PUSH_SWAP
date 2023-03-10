@@ -6,7 +6,7 @@
 /*   By: vicgarci <vicgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 18:10:45 by vicgarci          #+#    #+#             */
-/*   Updated: 2023/03/09 20:05:28 by vicgarci         ###   ########.fr       */
+/*   Updated: 2023/03/10 17:08:09 by vicgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,8 +69,8 @@ static void	tests(t_list **target, t_list **destiny, t_bool *flag)
 		*flag = false;
 		ft_test_output(false, "Push 3");
 	}
-	ft_lstclear(destiny, NULL);
-	ft_lstclear(target, NULL);
+	ft_lstclear(destiny, free);
+	ft_lstclear(target, free);
 }
 
 void	push_tester(void)
