@@ -6,7 +6,7 @@
 /*   By: vicgarci <vicgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 14:25:55 by vicgarci          #+#    #+#             */
-/*   Updated: 2023/03/09 18:41:51 by vicgarci         ###   ########.fr       */
+/*   Updated: 2023/03/10 15:23:07 by vicgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 
 void	ft_swap(t_list **stack);
 void	ft_push(t_list **target, t_list **destiny);
+void	ft_rotate(t_list **stack);
 
 /*----TESTERS----*/
 
@@ -30,5 +31,6 @@ void	ft_test_output(t_bool result, char *s);
 void	push_swap_tester(void);
 void	swap_tester(void);
 void	push_tester(void);
+void	rotate_tester(void);
 
 #endif

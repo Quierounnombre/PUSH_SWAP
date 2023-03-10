@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap_tester.c                                 :+:      :+:    :+:   */
+/*   ft_rotate_stack.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vicgarci <vicgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 15:38:00 by vicgarci          #+#    #+#             */
-/*   Updated: 2023/03/10 15:22:46 by vicgarci         ###   ########.fr       */
+/*   Created: 2023/03/10 15:06:40 by vicgarci          #+#    #+#             */
+/*   Updated: 2023/03/10 16:04:06 by vicgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
-void	push_swap_tester(void)
+void	ft_rotate(t_list **stack)
 {
-	swap_tester();
-	push_tester();
-	rotate_tester();
+	t_list	*first_elem;
+
+	if (stack && *stack && (*stack)->next)
+	{
+		first_elem = *stack;
+		*stack = first_elem->next;
+		first_elem->next = NULL;
+		ft_lstadd_back(stack, first_elem);
+	}
 }
